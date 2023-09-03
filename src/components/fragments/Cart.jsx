@@ -99,7 +99,10 @@ export const CartList = (props) => {
                     <span className="text-sm text-gray-600">{price}</span>
 
                     <div className="flex items-center mt-2">
-                        <button className="text-gray-500 focus:outline-none focus:text-gray-600">
+                        <button
+                            className="text-gray-500 focus:outline-none focus:text-gray-600"
+                            onClick={() => alert('Plus')}
+                        >
                             <svg
                                 className="w-5 h-5"
                                 fill="none"
@@ -113,7 +116,10 @@ export const CartList = (props) => {
                             </svg>
                         </button>
                         <span className="mx-2 text-gray-700">{qty}</span>
-                        <button className="text-gray-500 focus:outline-none focus:text-gray-600">
+                        <button
+                            className="text-gray-500 focus:outline-none focus:text-gray-600"
+                            onClick={() => alert('Min')}
+                        >
                             <svg
                                 className="w-5 h-5"
                                 fill="none"
